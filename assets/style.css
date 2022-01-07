@@ -49,19 +49,87 @@ header nav ul li a {
 
 .hero {
     height: 400px;
+    width: 100%;
     background-image: url(../assets/images/wallpapersden.com_cool-4k-pattern_3840x2160.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    padding: 0 2.5%;
+    align-items: center;
 }
 
 .hero h2 {
     font-size: 36px;
     font-weight: lighter;
-    position: relative;
-    top: 180px;
-    left: 38px;
+    
+}
+
+.me {
+    margin-top: 8px;
+    margin-left: 40px;
 }
 
 .me h2 {
-    margin: 50px 35px;
+    margin: 5px 5px;
+    padding: 10px;
+    padding-right: 60px;
+    width: 300px;  
+    font-size: 44px;   
+}
+
+.my-info {
+    display: flex;
+    padding: 10px 50px;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.my-info p {
+    border-left: #d5f4e6 2px solid;
+    padding-left: 20px;
+    width: 1000px;
+}
+
+.projects {
+    display: flex;
+    padding: 10px 50px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.projects img {
+    height: 200px;
+}
+
+.images {
+    padding: 0 210px;
+    border-left: #d5f4e6 2px solid;
+}
+
+.same-line {
+    display: flex;
+    gap: 10px;
+}
+
+#run-buddy {
+    width: 610px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.contact {
+    display: flex;
+    padding: 10px 50px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.content {
+    font-size: 24px;
+    gap: 115px;
+    border-left: #d5f4e6 2px solid;
+    width: 1000px;
+    padding-left: 20px;
+    display: flex;
 }
