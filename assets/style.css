@@ -15,6 +15,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
 }
 
 header a {
@@ -82,13 +83,14 @@ header nav ul li a {
     padding: 10px 50px;
     align-items: center;
     margin-bottom: 30px;
-
+    flex-wrap: wrap;
 }
 
 .my-info p {
     border-left: #d5f4e6 2px solid;
     padding-left: 20px;
     width: 1000px;
+    flex-wrap: wrap;
 }
 
 .projects {
@@ -100,16 +102,41 @@ header nav ul li a {
 
 .projects img {
     height: 200px;
+    flex-wrap: wrap;
 }
 
 .images {
     padding: 0 210px;
     border-left: #d5f4e6 2px solid;
+    flex-wrap: wrap;
 }
 
 .same-line {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+}
+
+.img1 {
+    position: relative;
+}
+
+.label1 {
+    position: absolute;
+    top: 190px;
+    padding-left: 5px;
+    padding-right: 2px;
+    color: #d5f4e6;
+    background-color: black;
+}
+
+.label2 {
+    position: absolute;
+    top: 160px;
+    padding-left: 5px;
+    padding-right: 2px;
+    color: #d5f4e6;
+    background-color: black;
 }
 
 #run-buddy {
@@ -123,6 +150,7 @@ header nav ul li a {
     padding: 10px 50px;
     align-items: center;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .content {
@@ -132,4 +160,156 @@ header nav ul li a {
     width: 1000px;
     padding-left: 20px;
     display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 980px) {
+    .my-info h2 {
+        margin-right: 40px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .projects h2 {
+        margin-right: 54px;
+    }
+    
+    .images {
+        padding: 0 100px;
+    }
+
+    #run-buddy {
+        width: 400px;
+    }
+    #horiseon {
+        width: 195px;
+    }
+    #music-blog {
+        width: 195px;
+    }
+
+    .content {
+        font-size: 24px;
+        gap: 30px;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .hero h2 {
+        padding-left: 25px;
+        width: 250px;
+        font-size: 24px;
+    }
+    #run-buddy {
+        width: 200px;
+        height: 200px;
+    }
+    #horiseon {
+        width: 200px;
+        height: 200px;
+    }
+    #music-blog {
+        width: 200px;
+        height: 200px;
+    }
+
+    .images {
+        padding-left: 70px;
+    }
+
+    .projects h2 {
+        margin-right: 52px;
+    }
+
+    .contact h2 {
+        padding-right: 58px;
+    }
+
+    .label1 {
+        top: 155px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .me {
+        margin: 0px;
+    }
+    .me h2 {
+        align-items: center;  
+        font-size: 36px;  
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px; 
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .my-info {
+        padding: 20px;
+    }
+    .my-info p {
+        padding-left: 0px;
+        width: 100%
+    }
+    .word-about {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .content {
+        border-left: none;
+    }
+    .my-info p {
+        border-left: none;
+    }
+
+    .projects {
+        flex-wrap: wrap;
+    }
+    .projects img {
+        flex-wrap: wrap;
+    }
+    #run-buddy {
+        width: 400px;
+        height: 400px;
+    }
+    #horiseon {
+        width: 400px;
+        height: 400px;
+    }
+    #music-blog {
+        width: 400px;
+        height: 400px;
+    }
+    .images {
+        border-left: none;
+        padding: 0px;
+        text-align: center;
+    }
+    .same-line {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .label1 {
+        top: 300px;
+        left: 35px;
+    }
+    .label2 {
+        top: 300px;
+    }
+
+    .content {
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        text-align: center;
+    }
+    .element {
+        margin: 5px 100px;
+    }
 }
